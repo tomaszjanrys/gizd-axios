@@ -9,11 +9,11 @@ const z = tomek.create({
 })
 
 
-z.delete('/gists/0a5f05e4f17c043c35e44e27a8a68787', {
+z.get('/gists/88b3e3ed3dd4aba2affb1daca7c926b7/star', {
 
     })
     .then(function(response) {
-        console.log(response);
+        console.log(response.status);
     })
     .catch(function(error) {
         console.log(error);
