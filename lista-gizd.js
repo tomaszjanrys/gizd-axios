@@ -1,9 +1,19 @@
-const tomek = axios('require');
-const z = axios.created({
+const tomek = require('axios');
+const z = tomek.create({
     baseURL: 'https://api.github.com/',
     responseType: 'json',
     headers: {
-        'Authorization': 'token 21f1853c04aa27b80c236b65571f7c1a7dfa1ada',
+        'Authorization': 'token c8d4cdcc3e04900bdb9140c90561782a27892912',
         'Accept': 'application/vnd.github.v3+json',
     }
 })
+
+z.get('/gists', {
+
+    })
+    .then(function(response) {
+        console.log(response.data);
+    })
+    .catch(function(error) {
+        console.log(error);
+    })
